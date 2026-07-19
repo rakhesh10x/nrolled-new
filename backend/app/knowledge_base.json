@@ -1,0 +1,127 @@
+{
+  "company": "TechCorp Solutions Pvt. Ltd.",
+  "version": "1.0",
+  "last_updated": "2026-01-01",
+  "policies": [
+    {
+      "id": "casual_leave",
+      "title": "Casual Leave (CL) Policy",
+      "category": "Casual Leave",
+      "keywords": ["casual", "cl", "casual leave", "personal leave", "time off"],
+      "content": "All full-time confirmed employees are entitled to 12 days of Casual Leave (CL) per calendar year. Casual leaves are intended for unexpected personal matters, family obligations, or short breaks. Employees can apply for a maximum of 3 consecutive casual leaves at a time. Advance notice of at least 24 hours is required unless in case of emergency. CL cannot be combined with Earned Leave. Unused casual leaves lapse at the end of the calendar year and cannot be carried forward or encashed.",
+      "source": "HR Policy Manual 2026, Section 4.1 - Casual Leave"
+    },
+    {
+      "id": "sick_leave",
+      "title": "Sick Leave (SL) Policy",
+      "category": "Sick Leave",
+      "keywords": ["sick", "sl", "sick leave", "medical", "doctor", "health", "illness"],
+      "content": "Employees are provided 12 days of Sick Leave (SL) per calendar year for medical reasons, illness, or medical appointments. If sick leave extends beyond 3 consecutive working days, a valid medical certificate from a registered medical practitioner must be submitted to HR upon return to work. Sick leaves can be accumulated up to a maximum of 30 days over the employment period. Unused sick leaves are not encashable upon resignation.",
+      "source": "HR Policy Manual 2026, Section 4.2 - Sick Leave"
+    },
+    {
+      "id": "earned_leave",
+      "title": "Earned Leave (EL) / Privilege Leave Policy",
+      "category": "Earned Leave",
+      "keywords": ["earned", "el", "earned leave", "privilege leave", "pl", "annual leave", "vacation", "encashment"],
+      "content": "Employees accrue 18 days of Earned Leave (EL) per year, calculated at 1.5 days per completed month of service. EL is designed for planned long vacations and personal trips. Prior approval must be requested at least 7 working days in advance. A maximum of 30 unused EL days can be carried forward to the next calendar year. Employees are eligible for leave encashment of up to 15 days of unused EL during the annual appraisal cycle or upon separation from the company.",
+      "source": "HR Policy Manual 2026, Section 4.3 - Earned Leave"
+    },
+    {
+      "id": "maternity_leave",
+      "title": "Maternity Leave Policy",
+      "category": "Maternity Leave",
+      "keywords": ["maternity", "pregnancy", "childbirth", "mother", "maternity leave", "motherhood"],
+      "content": "Female employees who have worked at TechCorp for at least 80 days in the 12 months preceding their expected delivery date are eligible for 26 weeks (182 days) of fully paid Maternity Leave for up to two surviving children. For a third child, maternity leave entitlement is 12 weeks. Employees may take up to 8 weeks of leave prior to the expected delivery date. Additional unpaid leave up to 4 weeks may be granted upon submission of a medical certificate in case of pregnancy-related complications.",
+      "source": "HR Policy Manual 2026, Section 4.4 - Maternity Leave"
+    },
+    {
+      "id": "paternity_leave",
+      "title": "Paternity Leave Policy",
+      "category": "Paternity Leave",
+      "keywords": ["paternity", "father", "childbirth", "newborn", "paternity leave", "paternal"],
+      "content": "Male employees are eligible for 15 days of fully paid Paternity Leave upon the birth or legal adoption of a child (for up to two surviving children). Paternity leave must be availed within 6 months from the date of childbirth or official adoption. The leave can be taken in up to two spells. Prior notification to HR and manager at least 15 days before the expected date of delivery is required.",
+      "source": "HR Policy Manual 2026, Section 4.5 - Paternity Leave"
+    },
+    {
+      "id": "attendance_hours",
+      "title": "Attendance & Working Hours Policy",
+      "category": "Attendance",
+      "keywords": ["attendance", "working hours", "timing", "office time", "check-in", "late", "grace period", "biometric"],
+      "content": "Official working hours at TechCorp are from 9:30 AM to 6:30 PM, Monday through Friday, comprising 45 total hours per week with a 1-hour lunch break (1:00 PM to 2:00 PM). Core collaboration hours are 10:00 AM to 4:00 PM. A daily grace period of 15 minutes is allowed (check-in up to 9:45 AM). More than 3 late check-ins in a calendar month will result in the deduction of half a day's casual leave. Attendance is recorded via biometric scanner or mobile app check-in.",
+      "source": "HR Policy Manual 2026, Section 2.1 - Working Hours & Attendance"
+    },
+    {
+      "id": "payroll_salary",
+      "title": "Payroll & Salary Processing Policy",
+      "category": "Payroll",
+      "keywords": ["payroll", "salary", "payday", "credit date", "payslip", "tax", "tds", "reimbursement", "bank"],
+      "content": "Salaries are processed monthly and credited directly to employee registered bank accounts on the 25th of every month (or the preceding working day if the 25th falls on a weekend or public holiday). Monthly digital payslips are generated and accessible via the HR Portal on the payday. Tax Deductions at Source (TDS), Provident Fund (PF), and Professional Tax are automatically deducted per government regulations. Investment declarations for IT tax savings must be submitted by January 15th.",
+      "source": "HR Policy Manual 2026, Section 5.1 - Payroll Processing"
+    },
+    {
+      "id": "work_from_home",
+      "title": "Work From Home (WFH) & Hybrid Policy",
+      "category": "Work From Home",
+      "keywords": ["wfh", "work from home", "remote", "hybrid", "telecommute", "home office"],
+      "content": "TechCorp operates a hybrid work model allowing eligible full-time employees to Work From Home for up to 2 days per week (typically Wednesday and Friday, subject to manager approval). Employees must maintain a quiet, secure workspace with high-speed internet (at least 50 Mbps). Core working hours (10:00 AM to 4:00 PM) must be strictly maintained during WFH. WFH requests must be marked on the HR portal at least 24 hours in advance.",
+      "source": "HR Policy Manual 2026, Section 3.1 - Hybrid & WFH Guidelines"
+    },
+    {
+      "id": "holidays",
+      "title": "Official Company Holiday List Policy",
+      "category": "Holidays",
+      "keywords": ["holidays", "holiday list", "public holiday", "restricted holiday", "festival", "off days"],
+      "content": "TechCorp observes 12 mandatory public holidays per calendar year, including New Year's Day, Republic Day, Independence Day, Gandhi Jayanti, Diwali, and Christmas. In addition, employees are entitled to select 2 Restricted Holidays (RH) per year from a published optional list of cultural and regional festivals. The complete annual holiday calendar is published by HR on December 15th for the upcoming year.",
+      "source": "HR Policy Manual 2026, Section 4.6 - Company Holidays"
+    },
+    {
+      "id": "overtime_policy",
+      "title": "Overtime & Weekend Allowance Policy",
+      "category": "Overtime",
+      "keywords": ["overtime", "ot", "weekend work", "extra hours", "allowance", "comp off"],
+      "content": "Non-exempt employees requested by their project manager to work beyond 45 hours in a week or on weekends/holidays are eligible for Overtime Allowance or Compensatory Off (Comp-Off). Weekend work yields 1 Comp-Off day for every full working day (minimum 6 hours). Comp-Off must be utilized within 60 days of earning. Overtime pay is calculated at 1.5x regular hourly rate for weekday extra hours exceeding 2 hours per day.",
+      "source": "HR Policy Manual 2026, Section 2.3 - Overtime & Comp-Off"
+    },
+    {
+      "id": "probation_policy",
+      "title": "Probation & Confirmation Policy",
+      "category": "Probation",
+      "keywords": ["probation", "confirmation", "trainee", "notice in probation", "probationary"],
+      "content": "All newly joined employees undergo a standard 6-month probation period starting from their date of joining. At 5 months, the reporting manager conducts a formal probation review. Upon satisfactory performance, a confirmation letter is issued by HR. If performance does not meet expectations, probation may be extended by up to 3 months with a structured Performance Improvement Plan (PIP). During probation, the notice period for separation is 30 days.",
+      "source": "HR Policy Manual 2026, Section 1.2 - Probation & Employment Status"
+    },
+    {
+      "id": "performance_reviews",
+      "title": "Performance Review & Appraisal Policy",
+      "category": "Performance Reviews",
+      "keywords": ["performance", "appraisal", "review", "rating", "increment", "kpi", "kra", "goals"],
+      "content": "TechCorp conducts quarterly KPI check-ins and an Annual Performance Appraisal in April. Performance is evaluated on a 5-point scale (1: Unsatisfactory to 5: Outstanding). Annual salary increments, performance bonuses, and promotions are linked directly to annual appraisal ratings. Self-appraisals must be completed on the HR portal by March 15th, followed by manager evaluation and 1-on-1 review meetings.",
+      "source": "HR Policy Manual 2026, Section 6.1 - Performance Management System"
+    },
+    {
+      "id": "travel_policy",
+      "title": "Business Travel & Expense Reimbursement Policy",
+      "category": "Travel Policy",
+      "keywords": ["travel", "business travel", "reimbursement", "allowance", "hotel", "flight", "cab", "expenses"],
+      "content": "All domestic and international business travel must be pre-approved by the department head. Flights (economy class) and hotels (partnered 4-star or equivalent) are booked through the corporate travel desk. Daily Out-of-Station Allowance (Per Diem) is ₹1,500 for domestic travel and $75 for international travel to cover meals and local transport. Expense claims with receipts must be submitted via the portal within 14 days of trip completion.",
+      "source": "HR Policy Manual 2026, Section 7.1 - Corporate Travel & Reimbursements"
+    },
+    {
+      "id": "code_of_conduct",
+      "title": "Code of Conduct & Anti-Harassment (POSH) Policy",
+      "category": "Code of Conduct",
+      "keywords": ["conduct", "code of conduct", "harassment", "posh", "ethics", "posh policy", "grievance", "compliance"],
+      "content": "TechCorp is committed to maintaining a safe, professional, and inclusive work environment free from discrimination, harassment, or retaliation. Prevention of Sexual Harassment (POSH) policy applies to all employees, vendors, and visitors. Complaints can be submitted confidentially to the Internal Complaints Committee (ICC) at posh@techcorp.com. Investigation is completed within 90 days as mandated by law. Violations result in strict disciplinary action, up to immediate termination.",
+      "source": "HR Policy Manual 2026, Section 8.1 - Code of Ethics & POSH Compliance"
+    },
+    {
+      "id": "resignation_notice",
+      "title": "Resignation, Notice Period & Offboarding Policy",
+      "category": "Resignation & Notice Period",
+      "keywords": ["resignation", "notice period", "offboarding", "buyout", "exit", "relieving letter", "handover", "clearance"],
+      "content": "Confirmed employees must serve a 60-day notice period upon submitting formal resignation via email to HR and manager. Probationary employees serve a 30-day notice period. Notice period buyout (shortfall payment) requires approval from HR and Department Head. Complete knowledge transfer (KT) and return of company assets (laptop, access cards) are mandatory before issuance of the Relieving Letter and Full & Final (F&F) settlement within 30 days of last working day.",
+      "source": "HR Policy Manual 2026, Section 9.1 - Resignation & Separation"
+    }
+  ]
+}

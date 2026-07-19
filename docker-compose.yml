@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  # FastAPI Backend Service
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: hr_assistant_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - OXLO_API_KEY=${OXLO_API_KEY}
+      - SECRET_KEY=${SECRET_KEY:-super_secret_jwt_key_hr_assistant_2026}
+      - DATABASE_URL=sqlite:///./hr_assistant.db
+      - CORS_ORIGINS=http://localhost,http://localhost:5173,http://localhost:80
+    volumes:
+      - ./backend/hr_assistant.db:/app/hr_assistant.db
+
+  # React Vite Frontend Service
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: hr_assistant_frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend

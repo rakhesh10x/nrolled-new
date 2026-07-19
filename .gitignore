@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+backend/venv/
+backend/__pycache__/
+frontend/dist/
+frontend/node_modules/
+
+# Environment files
+.env
+backend/.env
+*.env.local
+
+# Databases & logs
+*.db
+*.sqlite3
+*.log
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

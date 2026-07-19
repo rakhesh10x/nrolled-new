@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hr-assistant-backend"
+version = "1.0.0"
+description = "Production-ready AI-powered HR Assistant with RAG & SSE Streaming"
+authors = [{ name = "Software Engineer", email = "dev@example.com" }]
+requires-python = ">=3.10"
+
+# ============================================================
+# Black Formatting Configuration
+# ============================================================
+[tool.black]
+line-length = 88
+target-version = ['py310']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | \.mypy_cache
+  | \.pytest_cache
+  | build
+  | dist
+)/
+'''
+
+# ============================================================
+# Ruff Linter Configuration
+# ============================================================
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+src = ["app"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "C",   # convention
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+]
+ignore = [
+    "B008", # Do not perform function calls in argument defaults (FastAPI Depends)
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app"]
+
+# ============================================================
+# Pytest Configuration
+# ============================================================
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+asyncio_mode = "auto"
