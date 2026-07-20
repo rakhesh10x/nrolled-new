@@ -6,7 +6,7 @@ status filtering, paginated lists, and Recharts analytics aggregations.
 """
 
 from datetime import datetime, timezone
-from typing import List, Optional, Tuple
+from typing import Any, List, Optional, Tuple
 from sqlalchemy import func, or_
 from sqlalchemy.orm import Session, joinedload
 
