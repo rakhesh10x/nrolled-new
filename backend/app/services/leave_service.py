@@ -111,8 +111,8 @@ class LeaveService:
         leave = LeaveRequest(
             employee_id=employee.id,
             leave_type=leave_type,
-            start_date=payload.start_date,
-            end_date=payload.end_date,
+            start_date=start_dt.date() if isinstance(start_dt, datetime) else start_dt,
+            end_date=end_dt.date() if isinstance(end_dt, datetime) else end_dt,
             days=requested_days,
             reason=payload.reason,
             status="PENDING",

@@ -44,22 +44,37 @@ class LeaveRepository:
             .first()
         )
 
+    def _to_date(self, val: Any) -> Any:
+        from datetime import date as dt_date, datetime as dt_datetime
+        if isinstance(val, dt_datetime):
+            return val.date()
+        if isinstance(val, dt_date):
+            return val
+        if isinstance(val, str):
+            try:
+                return dt_datetime.strptime(val.strip(), "%Y-%m-%d").date()
+            except Exception:
+                return val
+        return val
+
     def get_overlapping_leave(
         self,
         employee_id: int,
-        start_date: str,
-        end_date: str,
+        start_date: Any,
+        end_date: Any,
         exclude_id: Optional[int] = None,
     ) -> Optional[LeaveRequest]:
         """
         Check if employee has an active (PENDING or APPROVED) leave overlapping the given date range.
         Date overlap condition: (start1 <= end2) AND (end1 >= start2)
         """
+        s_date = self._to_date(start_date)
+        e_date = self._to_date(end_date)
         query = self.db.query(LeaveRequest).filter(
             LeaveRequest.employee_id == employee_id,
             LeaveRequest.status.in_(["PENDING", "APPROVED"]),
-            LeaveRequest.start_date <= end_date,
-            LeaveRequest.end_date >= start_date,
+            LeaveRequest.start_date <= e_date,
+            LeaveRequest.end_date >= s_date,
         )
         if exclude_id:
             query = query.filter(LeaveRequest.id != exclude_id)
