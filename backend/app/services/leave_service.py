@@ -29,12 +29,18 @@ class LeaveService:
         self.leave_repo = LeaveRepository(db)
         self.user_repo = UserRepository(db)
 
-    def _parse_date(self, date_str: str) -> datetime:
-        """Parse YYYY-MM-DD string into datetime."""
-        try:
-            return datetime.strptime(date_str, "%Y-%m-%d")
-        except ValueError:
-            raise ValidationError(f"Invalid date format '{date_str}'. Expected YYYY-MM-DD.")
+    def _parse_date(self, val) -> datetime:
+        """Parse datetime, date object, or YYYY-MM-DD string into datetime."""
+        if isinstance(val, datetime):
+            return val
+        if hasattr(val, "year") and hasattr(val, "month") and hasattr(val, "day"):
+            return datetime(val.year, val.month, val.day)
+        if isinstance(val, str):
+            try:
+                return datetime.strptime(val, "%Y-%m-%d")
+            except ValueError:
+                raise ValidationError(f"Invalid date format '{val}'. Expected YYYY-MM-DD.")
+        raise ValidationError(f"Invalid date value '{val}'.")
 
     def apply_leave(self, current_user: User, payload: LeaveRequestCreate) -> LeaveRequest:
         """
