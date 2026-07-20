@@ -58,6 +58,13 @@ class Settings(BaseSettings):
         description="Sampling temperature for LLM.",
     )
 
+    @property
+    def api_keys_list(self) -> List[str]:
+        """Return list of API keys parsed from comma-separated OXLO_API_KEY string."""
+        if not self.OXLO_API_KEY:
+            return []
+        return [k.strip() for k in self.OXLO_API_KEY.split(",") if k.strip()]
+
     # --- JWT Security ---
     SECRET_KEY: str = Field(
         ...,
