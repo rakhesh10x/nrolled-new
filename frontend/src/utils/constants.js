@@ -4,8 +4,12 @@
  * Centralized constants to avoid magic strings scattered across components.
  */
 
-/** Backend API base URL (proxied through Vite in development). */
-export const API_BASE_URL = "/api/v1";
+/** Backend API base URL (detects deployed backend URL or local fallback). */
+export const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ||
+  (typeof window !== "undefined" && window.location.hostname.includes("onrender.com")
+    ? "https://nrolled-new.onrender.com/api/v1"
+    : "/api/v1");
 
 /** LocalStorage keys */
 export const STORAGE_KEYS = {
