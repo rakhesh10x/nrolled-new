@@ -49,7 +49,16 @@ export default function LeaveForm({ onSuccess }) {
       if (onSuccess) onSuccess();
     } catch (err) {
       const detail = err.response?.data?.detail;
-      const errMsg = typeof detail === "string" ? detail : detail?.error || "Failed to submit leave request.";
+      let errMsg = "Failed to submit leave request.";
+      if (typeof detail === "string") {
+        errMsg = detail;
+      } else if (Array.isArray(detail) && detail.length > 0) {
+        errMsg = detail[0].msg || "Validation error.";
+      } else if (detail?.error) {
+        errMsg = detail.error;
+      } else if (err.response?.data?.error) {
+        errMsg = err.response.data.error;
+      }
       setError(errMsg);
       toast.error(errMsg);
     } finally {

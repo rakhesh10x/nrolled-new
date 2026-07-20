@@ -115,7 +115,7 @@ class LeaveRequestCreate(BaseModel):
     leave_type: str = Field(..., description="Casual Leave, Sick Leave, or Earned Leave", json_schema_extra={"example": "Casual Leave"})
     start_date: str = Field(..., pattern=r"^\d{4}-\d{2}-\d{2}$", json_schema_extra={"example": "2026-07-25"})
     end_date: str = Field(..., pattern=r"^\d{4}-\d{2}-\d{2}$", json_schema_extra={"example": "2026-07-27"})
-    reason: str = Field(..., min_length=5, max_length=500, json_schema_extra={"example": "Family function"})
+    reason: str = Field(..., min_length=1, max_length=500, json_schema_extra={"example": "Family function"})
 
 
 class LeaveActionRequest(BaseModel):
