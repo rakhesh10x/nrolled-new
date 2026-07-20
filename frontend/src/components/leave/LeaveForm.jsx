@@ -48,7 +48,8 @@ export default function LeaveForm({ onSuccess }) {
       setEndDate("");
       if (onSuccess) onSuccess();
     } catch (err) {
-      const errMsg = err.response?.data?.detail?.error || "Failed to submit leave request.";
+      const detail = err.response?.data?.detail;
+      const errMsg = typeof detail === "string" ? detail : detail?.error || "Failed to submit leave request.";
       setError(errMsg);
       toast.error(errMsg);
     } finally {
